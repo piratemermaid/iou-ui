@@ -1,0 +1,188 @@
+$color1: #59BFC0;
+$color2: #E05666;
+$color3: #F8EFCA;
+
+$font: 'Source Sans Pro', sans-serif;
+
+body, html {
+  font-family: $font;
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: $font;
+  }
+
+}
+
+.content-wrapper {
+  padding: 20px 25% 20px 25%;
+}
+
+#top-bg {
+  background: url('../img/city.png');
+}
+
+
+
+
+
+// FINAL DISPLAY PANEL STYLES
+
+
+#final-display {
+  padding: 10px;
+}
+
+.person1 {
+  background: $color1;
+  padding-top: 5px;
+
+  p {
+    font-size: 18px;
+  }
+
+  .amount {
+    font-size: 32px;
+    line-height: 20px;
+  }
+
+  
+}
+
+.person2 {
+  @extend .person1;
+  background: $color2;
+}
+
+.final-info {
+  @extend .person1;
+  padding: 10px 10px 0 10px;
+  margin: 10px 0 20px 0;
+
+  p {
+    font-size: 22px;
+  }  
+}
+
+.row {
+  margin: 0;
+}
+
+
+
+
+
+
+
+// INPUT STYLES
+
+#item-entry {
+  padding: 0;
+  margin: 0 auto;
+
+  .columns {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.add__person {
+  height: 35px;
+  font-size: 14px;
+}
+
+.add__description {
+  @extend .add__person;
+}
+
+.add__amount {
+  @extend .add__person;
+}
+
+.add__btn {
+  @extend .add__person;
+  background: $color1;
+  width: 100%;
+}
+
+.add__person:focus,
+.add__description:focus,
+.add__amount:focus {
+    outline: none;
+    border: 1px solid $color1;
+}
+
+.blue-focus:focus { border: 1px solid $color2 !important; }
+
+.blue { background: $color2 }
+
+
+
+
+
+// PERSON1 & PERSON2 PANEL STYLES
+
+h2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.person1-panel h2 {
+  color: $color1;
+}
+
+.person2-panel h2 {
+  color: $color2;
+}
+
+.person1-panel {
+  
+}
+
+.person2-panel {
+  @extend .person1-panel;
+}
+
+.item {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  padding: 0;
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// STYLES FOR JAVASCRIPT
+
+.neutral-bg {
+  @extend .final-info;
+  background: $color3;
+}
+
+.red-bg {
+  @extend .final-info;
+  background: $color1;
+}
+
+.blue-bg {
+  @extend .final-info;
+  background: $color2;
+}
+
+.blue-focus {
+
+}
+
+

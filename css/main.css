@@ -1,0 +1,90 @@
+body, html {
+  font-family: "Source Sans Pro", sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p, html h1, html h2, html h3, html h4, html h5, html h6, html p {
+    font-family: "Source Sans Pro", sans-serif; }
+
+.content-wrapper {
+  padding: 20px 25% 20px 25%; }
+
+#top-bg {
+  background: url("../img/city.png"); }
+
+#final-display {
+  padding: 10px; }
+
+.person1, .person2, .final-info, .neutral-bg, .red-bg, .blue-bg {
+  background: #59BFC0;
+  padding-top: 5px; }
+  .person1 p, .person2 p, .final-info p, .neutral-bg p, .red-bg p, .blue-bg p {
+    font-size: 18px; }
+  .person1 .amount, .person2 .amount, .final-info .amount, .neutral-bg .amount, .red-bg .amount, .blue-bg .amount {
+    font-size: 32px;
+    line-height: 20px; }
+
+.person2 {
+  background: #E05666; }
+
+.final-info, .neutral-bg, .red-bg, .blue-bg {
+  padding: 10px 10px 0 10px;
+  margin: 10px 0 20px 0; }
+  .final-info p, .neutral-bg p, .red-bg p, .blue-bg p {
+    font-size: 22px; }
+
+.row {
+  margin: 0; }
+
+#item-entry {
+  padding: 0;
+  margin: 0 auto; }
+  #item-entry .columns {
+    margin: 0;
+    padding: 5px; }
+
+.add__person, .add__description, .add__amount, .add__btn {
+  height: 35px;
+  font-size: 14px; }
+
+.add__btn {
+  background: #59BFC0;
+  width: 100%; }
+
+.add__person:focus, .add__description:focus, .add__amount:focus, .add__btn:focus,
+.add__description:focus,
+.add__amount:focus {
+  outline: none;
+  border: 1px solid #59BFC0; }
+
+.blue-focus:focus {
+  border: 1px solid #E05666 !important; }
+
+.blue {
+  background: #E05666; }
+
+h2 {
+  font-size: 18px;
+  padding-bottom: 10px; }
+
+.person1-panel h2, .person2-panel h2 {
+  color: #59BFC0; }
+
+.person2-panel h2 {
+  color: #E05666; }
+
+.item {
+  padding: 0;
+  margin: 0; }
+
+hr {
+  padding: 0;
+  margin: 5px; }
+
+.neutral-bg {
+  background: #F8EFCA; }
+
+.red-bg {
+  background: #59BFC0; }
+
+.blue-bg {
+  background: #E05666; }
+
+/*# sourceMappingURL=main.css.map */

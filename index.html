@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOU UI</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+  <body>
+    <div id="top-bg">
+      <div class="content-wrapper">
+        <div id="final-display">
+          <div class="row expanded align-center">
+            <div class="columns text-center small-6 person1">
+              <div class="person1__title"><p>Person 1 paid:</p></div>
+              <div class="person1__total"><p class="amount">$0</p></div>
+            </div>
+            <div class="columns text-center small-6 person2">
+              <div class="person2__title"><p>Person 2 paid:</p></div>
+              <div class="person2__total"><p class="amount">$0</p></div>
+            </div>
+          </div>
+          <div class="row expanded align-center">
+            <div class="columns text-center small-12 final-info neutral-bg owed__amt">
+              <div class="outcome"><p>Settled up!</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Form input -->
+    <div class="content-wrapper">
+      <div id="item-entry">
+        <div class="row expanded align-center">
+          <div class="large-2 columns">
+            <select class="add__person">
+                <option value="p1" class="p1__option" selected>Person1</option>
+                <option value="p2" class="p2__option">Person2</option>
+            </select>
+          </div>
+          <div class="large-5 columns">
+            <input type="text" class="add__description" placeholder="Description">
+          </div>
+          <div class="large-4 columns">
+            <input type="text" class="add__amount" placeholder="Amount">
+          </div>
+          <div class="large-1 columns">
+            <button class="add__btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Display all info -->
+    <div class="content-wrapper">
+      <div class="row expanded align-center">
+        <div class="columns large-6 person1-panel">
+          <div class="p1__list__title"><h2>Person1 paid:</h2></div>
+          <hr/>
+          <div class="p1__list">
+            <!-- <div class="item" id="p1-0">
+              <div class="row">
+                <div class="columns large-8">
+                  <div class="item__description">Utilities</div>
+                </div>
+                <div class="columns large-4 text-right">
+                    <div class="item__amount">$15.00</div>
+                </div>
+              </div>
+            </div>
+            <hr/> -->
+            <!-- <div class="item" id="p1-1">
+              <div class="row">
+                <div class="columns large-8">
+                  <div class="item__description">Internet</div>
+                </div>
+                <div class="columns large-4 text-right">
+                    <div class="item__amount">$80.00</div>
+                </div>
+              </div>
+            </div>
+            <hr/> -->
+          </div>
+        </div>
+
+        <div class="columns large-6 person2-panel">
+          <div class="p2__list__title"><h2>Person2 paid:</h2></div>
+          <hr/>
+          <div class="p2__list">
+            <!-- <div class="item" id="p2-0">
+              <div class="row">
+                <div class="columns large-8">
+                  <div class="item__description">Rent</div>
+                </div>
+                <div class="columns large-4 text-right">
+                    <div class="item__amount">$600.00</div>
+                </div>
+              </div>
+            </div>
+            <hr/> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
